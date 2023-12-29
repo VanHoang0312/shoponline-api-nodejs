@@ -44,7 +44,7 @@ routerSanpham.get('/danhmuc/:id', (req, res, next) => {
             if (data.length > 0) {
                 res.json(data);
             } else {
-                res.json('Không tìm thấy sản phẩm cho danh mục này.');
+                res.json('K tim thay');
             }
         })
         .catch(err => {
