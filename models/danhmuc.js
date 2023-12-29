@@ -7,13 +7,13 @@ mongoose.connect('mongodb://localhost/Dangnhap', {
 
 const Schema = mongoose.Schema;
  
-const accounSchema = new Schema({
-  username: String,
-  password: String
+const danhmucSchema = new Schema({
+  tendanhmuc: String,
+  mota: String
 },{
-    collection: 'account'
+    collection: 'danhmuc'
 });
 
 
-const AccountModel = mongoose.model('account', accounSchema)
-module.exports = AccountModel
+const danhmucModel = mongoose.model('danhmuc', danhmucSchema)
+module.exports = danhmucModel
