@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/Dangnhap', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
 const Schema = mongoose.Schema;
  
 const danhmucSchema = new Schema({
